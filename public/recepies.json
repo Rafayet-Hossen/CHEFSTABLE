@@ -1,0 +1,92 @@
+[
+  {
+    "recipe_image": "https://i.postimg.cc/653YYWXY/Chicken-Stir-Fry.jpg",
+    "recipe_id": 1,
+    "recipe_name": "Chicken Stir Fry",
+    "short_description": "A quick and healthy chicken stir fry with vegetables.",
+    "ingredients": [
+      "550 g chicken",
+      "120 ml soy sauce",
+      "200 g broccoli",
+      "100 g bell peppers",
+      "50 g carrots"
+    ],
+    "preparing_time": "30 min",
+    "calories": "320 calories"
+  },
+  {
+    "recipe_image": "https://i.postimg.cc/4NSw0D4Z/Mushroom-Pasta.jpg",
+    "recipe_id": 2,
+    "recipe_name": "Mushroom Pasta",
+    "short_description": "Creamy pasta with mushrooms and garlic.",
+    "ingredients": [
+      "200 g pasta",
+      "300 g mushroom",
+      "200 ml cream",
+      "50 g parmesan cheese",
+      "2 cloves garlic"
+    ],
+    "preparing_time": "25 min",
+    "calories": "400 calories"
+  },
+  {
+    "recipe_image": "https://i.postimg.cc/13VM1v4F/Vegetable-Soup.jpg",
+    "recipe_id": 3,
+    "recipe_name": "Vegetable Soup",
+    "short_description": "A warm and hearty vegetable soup.",
+    "ingredients": [
+      "200 g potatoes",
+      "150 g carrots",
+      "100 g celery",
+      "1 liter vegetable broth",
+      "2 tsp salt"
+    ],
+    "preparing_time": "40 min",
+    "calories": "150 calories"
+  },
+  {
+    "recipe_image": "https://i.postimg.cc/nrdTp5v4/Beef-Tacos.jpg",
+    "recipe_id": 4,
+    "recipe_name": "Beef Tacos",
+    "short_description": "Tasty tacos with seasoned beef and fresh toppings.",
+    "ingredients": [
+      "400 g beef",
+      "100 g taco shells",
+      "150 g lettuce",
+      "100 g cheese",
+      "50 ml salsa"
+    ],
+    "preparing_time": "20 min",
+    "calories": "350 calories"
+  },
+  {
+    "recipe_image": "https://i.postimg.cc/J7KpNy9s/Grilled-Salmon.jpg",
+    "recipe_id": 5,
+    "recipe_name": "Grilled Salmon",
+    "short_description": "Juicy grilled salmon with a tangy glaze.",
+    "ingredients": [
+      "300 g salmon",
+      "50 ml lemon juice",
+      "20 g honey",
+      "10 g garlic powder",
+      "5 g paprika"
+    ],
+    "preparing_time": "25 min",
+    "calories": "280 calories"
+  },
+  {
+    "recipe_image": "https://i.postimg.cc/25pGknBK/Pancakes.jpg",
+    "recipe_id": 6,
+    "recipe_name": "Pancakes",
+    "short_description": "Fluffy pancakes with syrup and butter.",
+    "ingredients": [
+      "200 g flour",
+      "300 ml milk",
+      "2 eggs",
+      "50 g butter",
+      "20 g sugar"
+    ],
+    "preparing_time": "15 min",
+    "calories": "200 calories"
+  }
+]
