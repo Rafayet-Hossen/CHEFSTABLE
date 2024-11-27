@@ -7,7 +7,7 @@ import Sidebar from "./components/Sidebar";
 
 const App = () => {
   const [recipeQueue,setRecipeQueue] = useState([]);
-
+  const [prepareRecipe,setPrepareRecipe] = useState([]);
   const addRecipeQueue = (recipes) => {
     const isExist = recipeQueue.find(
       (prevRecipe) => prevRecipe.recipe_id === recipes.recipe_id
@@ -18,6 +18,12 @@ const App = () => {
     else {
       alert("Recipe Already Exists")
     }
+  }
+  const handleRemove= (id) => {
+    const deletedRecipe = recipeQueue.find(recipe => recipe.recipe_id === id)
+    const updatedQueue = recipeQueue.filter(recipe => recipe.recipe_id !== id)
+    setRecipeQueue(updatedQueue)
+    setPrepareRecipe([...prepareRecipe,deletedRecipe])
   }
   return (
     <div className="w-11/12 mx-auto">
@@ -31,7 +37,7 @@ const App = () => {
           {/* Cards Section */}
           <Recipes addRecipeQueue={addRecipeQueue}/>
           {/* SideBar */}
-          <Sidebar recipeQueue={recipeQueue}/>
+          <Sidebar handleRemove={handleRemove} recipeQueue={recipeQueue} prepareRecipe={prepareRecipe}/>
       </section>
     </div>
   );
