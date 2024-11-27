@@ -11,8 +11,8 @@
       "100 g bell peppers",
       "50 g carrots"
     ],
-    "preparing_time": "30",
-    "calories": "320 calories"
+    "preparing_time": 30,
+    "calories": 320
   },
   {
     "recipe_image": "https://i.postimg.cc/4NSw0D4Z/Mushroom-Pasta.jpg",
@@ -26,8 +26,8 @@
       "50 g parmesan cheese",
       "2 cloves garlic"
     ],
-    "preparing_time": "25",
-    "calories": "400 calories"
+    "preparing_time": 25,
+    "calories": 400
   },
   {
     "recipe_image": "https://i.postimg.cc/13VM1v4F/Vegetable-Soup.jpg",
@@ -41,8 +41,8 @@
       "1 liter vegetable broth",
       "2 tsp salt"
     ],
-    "preparing_time": "40",
-    "calories": "150 calories"
+    "preparing_time": 40,
+    "calories": 150
   },
   {
     "recipe_image": "https://i.postimg.cc/nrdTp5v4/Beef-Tacos.jpg",
@@ -56,8 +56,8 @@
       "100 g cheese",
       "50 ml salsa"
     ],
-    "preparing_time": "20",
-    "calories": "350 calories"
+    "preparing_time": 20,
+    "calories": 350
   },
   {
     "recipe_image": "https://i.postimg.cc/J7KpNy9s/Grilled-Salmon.jpg",
@@ -71,8 +71,8 @@
       "10 g garlic powder",
       "5 g paprika"
     ],
-    "preparing_time": "25",
-    "calories": "280 calories"
+    "preparing_time": 25,
+    "calories": 280
   },
   {
     "recipe_image": "https://i.postimg.cc/25pGknBK/Pancakes.jpg",
@@ -86,7 +86,7 @@
       "50 g butter",
       "20 g sugar"
     ],
-    "preparing_time": "15",
-    "calories": "200 calories"
+    "preparing_time": 15,
+    "calories": 200
   }
 ]

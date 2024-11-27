@@ -1,4 +1,11 @@
-const Sidebar = ({ recipeQueue, handleRemove, prepareRecipe }) => {
+const Sidebar = ({
+  recipeQueue,
+  handleRemove,
+  prepareRecipe,
+  calculate,
+  totaltime,
+  totalcalories,
+}) => {
   return (
     <div className="md:w-1/3 border h-96 p-3 rounded-xl mt-6">
       <h1 className="font-bold text-2xl text-center">
@@ -28,6 +35,7 @@ const Sidebar = ({ recipeQueue, handleRemove, prepareRecipe }) => {
                   <button
                     onClick={() => {
                       handleRemove(recipe.recipe_id);
+                      calculate(recipe.preparing_time, recipe.calories);
                     }}
                     className="flex items-center py-2 px-5 bg-[#0BE58A] border-2 text-black mt-1 mb-1 rounded-full hover:bg-[#35f3a3]"
                   >
@@ -65,6 +73,12 @@ const Sidebar = ({ recipeQueue, handleRemove, prepareRecipe }) => {
                 <td>{recipe.calories}</td>
               </tr>
             ))}
+            <tr>
+              <td></td>
+              <td></td>
+              <td>Total Time:{totaltime}</td>
+              <td>Total Calories:{totalcalories}</td>
+            </tr>
           </tbody>
         </table>
       </div>

@@ -8,6 +8,8 @@ import Sidebar from "./components/Sidebar";
 const App = () => {
   const [recipeQueue,setRecipeQueue] = useState([]);
   const [prepareRecipe,setPrepareRecipe] = useState([]);
+  const [totaltime,setTime] = useState(0);
+  const [totalcalories,setCalories] = useState(0);
   const addRecipeQueue = (recipes) => {
     const isExist = recipeQueue.find(
       (prevRecipe) => prevRecipe.recipe_id === recipes.recipe_id
@@ -25,19 +27,30 @@ const App = () => {
     setRecipeQueue(updatedQueue)
     setPrepareRecipe([...prepareRecipe,deletedRecipe])
   }
+  const calculate = (time,calories) => {
+    setTime(totaltime+time)
+    setCalories(totalcalories+calories)
+  }
   return (
     <div className="w-11/12 mx-auto">
       {/* Navbar Section */}
-      <Navbar/>
+      <Navbar />
       {/* Banner Section */}
-      <Banner/>
+      <Banner />
       {/* Recepies Section */}
-      <OurRecipes/>
+      <OurRecipes />
       <section className="flex flex-col md:flex-row gap-6 mt-20">
-          {/* Cards Section */}
-          <Recipes addRecipeQueue={addRecipeQueue}/>
-          {/* SideBar */}
-          <Sidebar handleRemove={handleRemove} recipeQueue={recipeQueue} prepareRecipe={prepareRecipe}/>
+        {/* Cards Section */}
+        <Recipes addRecipeQueue={addRecipeQueue} />
+        {/* SideBar */}
+        <Sidebar
+          handleRemove={handleRemove}
+          recipeQueue={recipeQueue}
+          prepareRecipe={prepareRecipe}
+          calculate={calculate}
+          totaltime={totaltime}
+          totalcalories={totalcalories}
+        />
       </section>
     </div>
   );
