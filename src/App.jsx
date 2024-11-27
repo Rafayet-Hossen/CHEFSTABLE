@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import OurRecipes from "./components/OurRecipes";
 import Recipes from "./components/Recipes";
 import Sidebar from "./components/Sidebar";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [recipeQueue,setRecipeQueue] = useState([]);
@@ -32,14 +33,14 @@ const App = () => {
     setCalories(totalcalories+calories)
   }
   return (
-    <div className="w-11/12 mx-auto">
+    <div className="">
       {/* Navbar Section */}
       <Navbar />
       {/* Banner Section */}
       <Banner />
       {/* Recepies Section */}
       <OurRecipes />
-      <section className="flex flex-col md:flex-row gap-6 mt-20">
+      <section className="flex flex-col md:flex-row gap-6 mt-20 w-11/12 mx-auto">
         {/* Cards Section */}
         <Recipes addRecipeQueue={addRecipeQueue} />
         {/* SideBar */}
@@ -52,6 +53,7 @@ const App = () => {
           totalcalories={totalcalories}
         />
       </section>
+      <Footer />
     </div>
   );
 };
